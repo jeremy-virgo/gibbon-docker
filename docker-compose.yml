@@ -12,7 +12,7 @@ services:
       GIBBON_USERNAME: admin
       GIBBON_PASSWORD: Admin123
       GIBBON_EMAIL: admin@admin.com
-      GIBBON_URL: http://localhost:8080
+      GIBBON_URL: http://localhost:8088
     ports:
       - 8088:80
     depends_on:

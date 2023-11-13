@@ -1,8 +1,7 @@
 version: "3"
 services:
   gibbon:
-    build:
-      context: .
+    image: gibbon-docker
     container_name: gibbon
     environment:
       GIBBON_AUTOINSTALL: 1
@@ -15,7 +14,7 @@ services:
       GIBBON_EMAIL: admin@admin.com
       GIBBON_URL: http://localhost:8080
     ports:
-      - 8080:80
+      - 8088:80
     depends_on:
       - "db"
   db:

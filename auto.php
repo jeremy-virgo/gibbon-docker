@@ -77,7 +77,7 @@ $context = (Context::fromEnvironment())
 ob_start();
 
 // Attempt to download & install the required language files
-$locale_code = 'es_MX';
+$locale_code = 'en_AU';
 
 //Set language pre-install
 if (function_exists('gettext')) {
@@ -135,9 +135,9 @@ $user_data['absoluteURL'] = getenv('GIBBON_URL');
 $user_data['absolutePath'] = "/var/www/html";
 $user_data['systemName'] = getenv('GIBBON_SYSTEM_NAME') || "Gibbon";
 $user_data['installType'] = getenv('GIBBON_INSTALL_TYPE') || "Production";
-$user_data['timezone'] = getenv('GIBBON_TIMEZONE') || "America/Argentina/Buenos_Aires";
-$user_data['country'] = getenv('GIBBON_COUNTRY') || "Argentina";
-$user_data['currency'] = getenv('GIBBON_CURRENCY') || "ARS $";
+$user_data['timezone'] = getenv('GIBBON_TIMEZONE') || "Australia/Sydney";
+$user_data['country'] = getenv('GIBBON_COUNTRY') || "Australia";
+$user_data['currency'] = getenv('GIBBON_CURRENCY') || "AUD $";
 $user_data['statsCollection'] = "N";
 $user_data['cuttingEdgeCode'] = "No";
 $user_data['support'] = "";

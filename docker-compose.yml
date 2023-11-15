@@ -17,6 +17,9 @@ services:
       - 8088:80
     depends_on:
       - "db"
+    volumes:
+      - modules:/var/www/html/modules/
+      
   db:
     image: mysql
     container_name: mysql
@@ -33,3 +36,4 @@ services:
       - gibbon_db:/var/lib/mysql
 volumes:
   gibbon_db:
+  modules:
